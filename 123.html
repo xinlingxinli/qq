@@ -8,126 +8,142 @@
     <meta name="description" content="">
     <title>馨灵心理</title>
     <link target="_blank" href="" rel="stylesheet">
-    <style></style>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color:#dedede;
+        }
+        #header1 {
+            width: 100%;
+            height: 40px;
+            background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492713082458&di=160a075566cdd4df01efa2d438e81251&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201407%2F23%2F20140723125253_sM8BL.thumb.700_0.jpeg) no-repeat #333333 25px;
+            background-size: 107px;
+        }
+        #nav1 img{
+
+            height:50px;
+            position: absolute;
+            top:0;
+            left:24px;
+        }
+        #nav1 ul{
+            list-style: none;
+        }
+        #nav1 li{
+            float:right;
+            padding-right: 20px;
+            line-height:50px;
+        }
+        #nav1 li a{
+            color:#FFFFFF;
+        }
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color:red;
+        }
+        .box{
+            margin:5px;
+            width:400px;
+            height: 400px;
+            background: #FFFFFF;
+        }
+        .box2{
+            margin:5px;
+            width: 400px;
+            height:800px;
+            background: #ffffff;
+            overflow: scroll;
+        }
+        #Rinput{
+            float:right;
+            position: fixed;
+            top:70px;
+            right:20px;
+        }
+        #footer1 {
+            width: 100%;
+            height: 50px;
+            background-color:#000000 ;
+        }
+        #footer1 span{
+            color:#FFFFFF;
+            padding-left: 50%;
+            line-height: 50px;;
+        }
+        <div id="footer">
+        </div>
+    </style>
 </head>
 <body>
-<!-- 这是一段注释，以后大部分的代码都会写在body标签里面 -->
-    <header>
+    <header id="header1">
     <!-- 几乎每个网页都有一个顶部的导航条，我要写的这个网页也会有，于是我也弄一个header的分区 -->
-    首页 直播 点播 文章 个人中心   注册  登录
-    <div class="logo">
+        <nav id="nav1">
+            <!--导航菜单-->
+            <ul>
+                <li><a href="#">个人中心</a></li>
+                <li><a href="#">点播</a></li>
+                <li><a href="#">直播</a></li>
+                <li><a href="#">首页</a></li>
+            </ul>
+        </nav>
+      <div class="logo">
         <!-- 这个地方我打算放Logo，于是弄一个div分区，一个网页会有无数个div，我取个名字区分一下 -->
-    </div>
-    <nav>
-        <!-- 我打算把导航菜单放在header顶部，于是在顶部放一个nav -->
-    </nav>
     </header>
     <section id="carousel">
     <!-- 这一块我想放一个图片的轮播效果，因为网页里面的块太多了，我就命名为carousel区分一下，名字要能让自己和其他人看得懂，你也可以命名为lunbo -->
-    <img src="http://www.bz55.com/uploads/allimg/120721/1-120H1112I6.jpg""轮播图1" style="width:500px;height:300px;" />
     </section>
     <section id="content">
+    <!-- 这一段我打算放文章的主题内容，于是我就加了一个section标签，因为是内容，为了区分，我就命名为content -->
+        <div class="box">
+         <h1>悲伤从何而来？</h1>
+         <h2>对不起，这个问题实在是太难，容我思考一会！！！！！</h2>
+         <h3>孩子为什么不听话？</h3>
+         <h4>因为孩子是天使，不需要听从凡人父母的管教！！！！</h4>
+            <head>
+                <style type="text/css">
+                    p.ex1
+                    {
+                        font:italic arial,sans-serif;
+                    }
 
-        <article>
-            <h1>HackWeek网页开发</h1>
-            <h3>为什么要参加HackWeek活动</h3>
-            <p>HackWeek，让参与者在一周的时间里学习一个对自己工作和生活有切实帮助的技能点。我们致力于以最为有效的学习方式让每个人能够享受技术创造所带来的乐趣。<br><strong>技术是群体创造，欢乐而有趣的社交活动。</strong>
-            </p>
-            <div>
-                <a target="_blank" href="http://www.huodongxing.com/event/1354743848600" title="HackWeek活动报名" target="_blank">HackWeek零基础一周学会网站开发与网站建设</a>
-                <a target="_blank" href="http://hackweek.huodongxing.com/">立即报名</a>
-            </div>
-            <img src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/img/hackweekbanner.jpg" title="HackWeek网页开发"
-                 alt="HackWeek图片" width="300px"  >
-            <table>
-                <!--<tbody>…</tbody>标签可以控制表格分行下载，从而提高下载速度，你可以偷懒不写(这不大规范)，但浏览器会自动给你不写 -->
-                <tbody>
-                <!--<tr>…</tr>：表格的一行，所以有几对tr 表格就有几行。 -->
-                <tr>
-                    <!--<th>…</th>：表格的头部的一个单元格，表格表头。 -->
-                    <th>日期</th>
-                    <th>学习内容</th>
-                    <th>固定交流时间</th>
-                </tr>
-                <tr>
-                    <!--<td>…</td>：表格的一个单元格，一行中包含几对<td>...</td>，说明一行中就有几列。 -->
-                    <td>周一</td>
-                    <td>开发环境的搭建</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                <tr>
-                    <td>周二</td>
-                    <td>HTML基础知识</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                <tr>
-                    <td>周三</td>
-                    <td>CSS基础知识</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                <tr>
-                    <td>周四</td>
-                    <td>学习并理解Bootstrap</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                <tr>
-                    <td>周五</td>
-                    <td>引入开源项目</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                <tr>
-                    <td>周六</td>
-                    <td>网页初步设计</td>
-                    <td>20:30-21:30</td>
-                </tr>
-                </tbody>
-            </table>
-            </div>
-        </article>
- <h1>This is heading 1</h1>
- <h2>This is heading 2</h2>
- <h3>This is heading 3</h3>
- <h4>This is heading 4</h4>
- <h5>This is heading 5</h5>
- <h6>This is heading 6</h6>
+                    p.ex2
+                    {
+                        font:italic bold 12px/30px arial,sans-serif;
+                    }
+                </style>
+            </head>
 
-        <table border="3">
-            <tr>
-                <th>Month</th>
-                <th>Savings</th>
-            </tr>
-            <tr>
-                <td>January</td>
-                <td>$100</td>
-            <tr>
-                <td>January</td>
-                <td>$100</td><tr>
-            <tr>
-                <td>January</td>
-
-                <td>$100</td>
-            <tr>
-                <th>Month</th>
-                <th>Savings</th>
-            </tr>
-        </table>
-
-        <p>请仅仅把标题标签用于标题文本。不要仅仅为了产生粗体文本而使用它们。请使用其它标签或 CSS 代替。</p>
-            <hr>
-            <audio controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/zaowuzhe.mp3"></audio>
-            <video controls="controls" src="http://hackweek.oss-cn-shanghai.aliyuncs.com/t/audio/video.mp4" width="300"></video>
-            <!-- 这是一段文章，会有一大段的文字，于是我就用article标签，让别人看得懂，当然也可以用div,section来分区，但是article浏览器看得懂，我也好认 -->
-            <div>
-                <!--<table>…</table>：整个表格以<table>标记开始、</table>标记结束。 -->
-                <!-- 这一段我打算放文章的主题内容，于是我就加了一个section标签，因为是内容，为了区分，我就命名为content -->
-
+            <body>
+            <p class="ex1">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+            <p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
+            </body>
+        </div>
+    <article>
+        <!-- 这是一段文章，会有一大段的文字，于是我就用article标签，让别人看得懂，当然也可以用div,section来分区，但是article浏览器看得懂，我也好认 -->
+        <div class="box2">
+            <h1>随想</h1>
+            <h5>我发现，除了我们认知的物理空间，和很难理解的多维空间，平行宇宙，我又发现了另外一个更难理解的“流动态空间”↓↓↓欢迎交流！
+                意识与灵魂，是不是同一种产物？一部分人相信人死亡后意识会消失，但是灵魂却不会消失。我这里假设意识于灵魂是同一种产物，前面说一切有形无形的事物都在震动频率，但是意识是否有频率？是否也在震动？在这里我突然觉得意识是流动的，无频率的，就像风，风没有没有频率，风是空气流动的产物，你可以感受到风存在，却找不到风的结构，所以我在思考，意识是脑细胞，脑神经递质震动的副产品，意识不是由我们已知的事物组成，意识完全超出了人类能理解的范畴，人体震动频率的改变会改变意识的流动态，比如死亡，死亡是人类从一种震动频率转化成另外一种震动频率的过程，当这转化完成的时候，意识也就消失了，意识的流动态，就像风的流动态一样。要有个载体。
+                同时我又在思考另外一个问题，既然人体是在不断的震动，死亡是震动频率的改变，那么可不可以通过一种仪器精准的测量到人体的震动频率，甚至更精准的测量到每一个不同状态的组织的频率，固态的骨头，液态体液，神经系统等等。如果可以拿到这个准确的数据，那就可以通过共振的方式从新调整这些组织的震动，使人类复活，同时也可以在医疗行业起到重大突破，比如，测量到癌细胞的震动频率，艾滋病毒的震动频率，并且针对这单一的震动频率进行调频。改变癌细胞的震动频率，使它失去现有的杀伤力。
+                我突然间意识到，我的这些想法仍然被现有的物理定律限制。我觉得肯定有一个我们看不到的“流动态”里比如“意识流”这样的一个“空间”我肯定这个空间不是我们现有的我们所了解的物理空间。也不是所谓的多维空间。我发明的这个“空间”是一种像风一样的，像意识一样的“流动态”它没有人类认知领域以外的，没有大小，没有温度，没有物质。
+                ____今天就写到这，改天再继续。2017.3.1-----杨浩（记录于萧山机场）</h5>
+        </div>
+    </article>
     <aside>
         <!-- 内容太长，我打算在文章旁边加一个目录导航 -->
+
     </aside>
     </section>
     <footer>
     <!-- 在网页的底部我打算放一些我的联系信息 -->
-        馨灵心理：yanghao27@163.com
+
+        <P ALIGN="CENTER">版权所有：馨灵心理2017-2019 备案号：00000000</P>
+
     </footer>
 </body>
 </html>
