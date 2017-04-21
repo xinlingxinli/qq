@@ -22,6 +22,12 @@
             background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1492713082458&di=160a075566cdd4df01efa2d438e81251&imgtype=0&src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201407%2F23%2F20140723125253_sM8BL.thumb.700_0.jpeg) no-repeat #333333 25px;
             background-size: 107px;
         }
+        #header2 {
+            width: 100%;
+            height: 20px;
+            background: url() no-repeat #333333 0px;
+            background-size: 107px;
+        }
         #nav1 img{
 
             height:50px;
@@ -47,13 +53,13 @@
             color:red;
         }
         .box{
-            margin:5px;
+            margin:8px;
             width:400px;
             height: 400px;
             background: #FFFFFF;
         }
         .box2{
-            margin:5px;
+            margin:8px;
             width: 400px;
             height:800px;
             background: #ffffff;
@@ -68,7 +74,7 @@
         #footer1 {
             width: 100%;
             height: 50px;
-            background-color:#000000 ;
+            background-color:#blue ;
         }
         #footer1 span{
             color:#FFFFFF;
@@ -77,6 +83,7 @@
         }
         <div id="footer">
         </div>
+        #divcss5{height:100px;width:200px;border:1px solid #F00}
     </style>
 </head>
 <body>
@@ -96,6 +103,8 @@
     </header>
     <section id="carousel">
     <!-- 这一块我想放一个图片的轮播效果，因为网页里面的块太多了，我就命名为carousel区分一下，名字要能让自己和其他人看得懂，你也可以命名为lunbo -->
+        <div class="box">
+            <a href="*"<img src="2.png" /></a>
     </section>
     <section id="content">
     <!-- 这一段我打算放文章的主题内容，于是我就加了一个section标签，因为是内容，为了区分，我就命名为content -->
@@ -123,7 +132,7 @@
             <p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.</p>
             </body>
         </div>
-    <article>
+        <article>
         <!-- 这是一段文章，会有一大段的文字，于是我就用article标签，让别人看得懂，当然也可以用div,section来分区，但是article浏览器看得懂，我也好认 -->
         <div class="box2">
             <h1>随想</h1>
@@ -133,15 +142,33 @@
                 我突然间意识到，我的这些想法仍然被现有的物理定律限制。我觉得肯定有一个我们看不到的“流动态”里比如“意识流”这样的一个“空间”我肯定这个空间不是我们现有的我们所了解的物理空间。也不是所谓的多维空间。我发明的这个“空间”是一种像风一样的，像意识一样的“流动态”它没有人类认知领域以外的，没有大小，没有温度，没有物质。
                 ____今天就写到这，改天再继续。2017.3.1-----杨浩（记录于萧山机场）</h5>
         </div>
-    </article>
-    <aside>
-        <!-- 内容太长，我打算在文章旁边加一个目录导航 -->
+        </article>
+        <aside>
+            <!-- 内容太长，我打算在文章旁边加一个目录导航 -->
+            <table width="405" border="2" cellspacing="2">
+                <tr>
+                    <th>班级</th>
+                    <th>日期</th>
+                    <th>标题</th>
+                    <th>标题</th>
 
-    </aside>
+                </tr>
+                <tr>
+                    <td>一班</td>
+                    <td>2012-5-10</td>
+                    <td>标题1</td>
+                </tr>
+                <tr>
+                    <td>二班</td>
+                    <td>2012-5-20</td>
+                    <td>标题2</td>
+                </tr>
+            </table>
+        </aside>
     </section>
     <footer>
     <!-- 在网页的底部我打算放一些我的联系信息 -->
-
+        <header id="header2">
         <P ALIGN="CENTER">版权所有：馨灵心理2017-2019 备案号：00000000</P>
 
     </footer>
